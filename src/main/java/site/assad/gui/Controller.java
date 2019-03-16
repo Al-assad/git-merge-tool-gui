@@ -87,7 +87,7 @@ public class Controller {
     private volatile AtomicBoolean isTaskRun = new AtomicBoolean(false);
     
     private static final String helpMsg = "> 仓库首次运行时，由于clone操作，执行时间会较久\n" +
-            "> bug 请提交到 github issue : \n" +
+            "> bug 请提交到 github issue: <https://github.com/Al-assad/git-merge-tool-gui/> \n" +
             "> 最后，合并不规范，同事泪两行，请关爱同事的心智健康\n";
     
     /**
