@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'de.dynamicfiles.projects.gradle.plugins:javafx-gradle-plugin:8.8.2'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+group 'site.assad'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.alibaba:fastjson:1.2.47'
+    compile 'com.google.code.findbugs:jsr305:3.0.2'
+    compile 'org.slf4j:slf4j-simple:1.7.21'
+    compile 'org.eclipse.jgit:org.eclipse.jgit:5.0.3.201809091024-r'
+    compile 'org.eclipse.jgit:org.eclipse.jgit.archive:5.0.3.201809091024-r'
+    compile 'commons-io:commons-io:2.6'
+    compile 'org.apache.commons:commons-lang3:3.8'
+    compile 'org.apache.commons:commons-collections4:4.1'
+}
+
+apply plugin: 'javafx-gradle-plugin'
+jfx {
+    mainClass = 'site.assad.gui.Main'
+    vendor = 'Al-assad'
+    appName = 'git合并测试助手'
+}
