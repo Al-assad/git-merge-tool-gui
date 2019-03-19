@@ -29,5 +29,5 @@ git 分支合并测试GUI工具，用于在正式合并分支之前，进行分�
 
 直接解压已经编译的二进制包，双击 "Git合并测试小工具.jar" 即可运行该 GUI 程序；
 
-<a href="https://github.com/Al-assad/git-merge-tool-gui/releases">二进制包和启动脚本下载地址</a>
+<a href="https://github.com/Al-assad/git-merge-tool-gui/releases">二进制包下载地址</a>
 
